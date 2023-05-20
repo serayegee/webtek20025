@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Electrolize&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+
+/* base css start */
+* {
+  margin: 0;
+}
+/* base css end */
+
+body {
+  font-family: "Electrolize", sans-serif;
+}
+
+.navbar {
+  background-color: rgb(208, 162, 228);
+  height: 60px;
+  color: white;
+  position: sticky;
+  top: 0;
+}
+
+.navbar-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 50px;
+}
+
+.logo {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+}
+
+.menu-list {
+  display: flex;
+  list-style: none;
+  column-gap: 40px;
+}
+
+.menu-list-item {
+  cursor: pointer;
+}
+
+.menu-list-item:hover {
+  font-weight: bold;
+}
+
+.menu-list-item.active {
+  font-weight: bold;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.profile-picture {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile-text-container {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  line-height: 1;
+}
+
+.toggle {
+  width: 40px;
+  height: 20px;
+  background-color: white;
+  position: relative;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.toggle-icon {
+  color: purple;
+}
+
+.toggle-ball {
+  width: 18px;
+  height: 18px;
+  background-color: rgb(102, 100, 100);
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  right: 1px;
+}
+
+/*  
+.sidebar{
+    background-color: black;
+    color: white;
+    height: 100%;
+    width: 50px;
+}*/
+
+.featured-content {
+  font-family: "Abril Fatface", cursive;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  background-color: rgb(30, 56, 136);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding-bottom: 10px;
+  background-size: 100% 100%;
+}
+
+.featured-desc {
+  font-family: "Abril Fatface", cursive;
+  font-weight: 200;
+  background-size: 100% 100%;
+  margin: auto;
+}
+
+.ozgecmis-container {
+  background: url(img/e.jpg);
+  background-color: rgba(27, 155, 254, 255);
+  color: white;
+  list-style-type: none;
+  padding: 50px;
+  height: 700px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+}
+
+.ozgecmis-desc {
+  width: 500px;
+  background-color: rgb(208, 162, 228);
+  padding: 10px;
+  margin: auto;
+}
+
+.sehrim-container {
+  background-color: rgb(245, 230, 99);
+  padding: 10px;
+  height: 700px;
+  background-size: 100% 100%;
+  text-align: center;
+}
+
+.sehrim-desc {
+  width: 400px;
+  background: url(img/sehrimbg.jpg);
+  margin: auto;
+}
+
+/*.slider-wrapper{
+    overflow: hidden;
+    position: relative;
+}
+
+.slider-item-img{
+    position: relative;
+}*/
+
+.slider-container {
+  margin-left: 50px;
+}
+
+.slider-title {
+  text-align: left;
+}
+
+.slider-list {
+  list-style: none;
+  padding: 0;
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  column-gap: 1px;
+  transform: translateX(0);
+  transition: 1s all ease-in-out;
+}
+
+.slider-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.slider-item-img{
+    position: relative;
+}
+
+.arrow {
+    color: white;
+  width: 100px;
+  display: flex;
+  font-size: 50px;
+  position: absolute;
+  right: 0;
+  top: 125px;
+  align-items: end;
+  opacity: 0.5;
+  transition: 0.5s ease all;
+  cursor: pointer;
+}
+
+.arrow:hover {
+  opacity: 1;
+}
+
+.mirasimiz-container {
+  background-color: rgb(255, 173, 105);
+  background: url(img/f.jpg);
+  background-size: 100% 100%;
+  padding: 50px;
+  height: 1300px;
+  /*background-size: 100% 100%;*/
+  text-align: center;
+  
+}
+
+.mirasimiz-desc {
+  width: 900px;
+  background-color: rgb(208, 162, 228);
+  padding: 10px;
+  margin: auto;
+}
+
+.cumalikizik-desc {
+  width: 900px;
+  background-color: rgb(208, 162, 228);
+  padding: 10px;
+  margin: auto;
+}
+
+.golyazi-desc {
+  width: 900px;
+  background-color: rgb(208, 162, 228);
+  padding: 10px;
+  margin: auto;
+}
+
+.kozahan-desc {
+  width: 900px;
+  background-color: rgb(208, 162, 228);
+  padding: 10px;
+  margin: auto;
+}
+
+.mudanya-desc {
+  width: 900px;
+  background-color: rgb(208, 162, 228);
+  padding: 10px;
+  margin: auto;
+}
+
+.uludag-desc {
+  width: 900px;
+  background-color: rgb(208, 162, 228);
+  padding: 10px;
+  margin: auto;
+}
+
+.irgandi-desc {
+  width: 900px;
+  background-color: rgb(208, 162, 228);
+  padding: 10px;
+  margin: auto;
+}
+
+.suuctu-desc {
+  width: 900px;
+  background-color: rgb(208, 162, 228);
+  padding: 10px;
+  margin: auto;
+}
+
+.ilgialanlarim-container {
+  background-color: rgb(156, 56, 72);
+  padding: 50px;
+  height: 550px;
+  background-size: 100% 100%;
+  text-align: center;
+}
+
+.ilgialanlarim-desc {
+  width: 500px;
+  background-color: rgb(208, 162, 228);
+  padding: 10px;
+  margin: auto;
+}
